@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="coffeeApp">
+<head>
+    <title>Alison's Awesome Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen"/>
+</head>
+<body>
+
+    <div ng-controller="OrderController" class="container">
+        <form ng-submit="sendMeCoffee()">
+            <div class="form-group">
+                <label for="drink">Drink</label>
+                <select  id="drink"ng-model="drink.type" ng-options="type.name for type in types | orderBy: 'name' " ng-required="true" class="form-control">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Size</label>
+                <select id="size" ng-model="drink.size" ng-options="size for size in sizes" ng-required="true" class="form-control">
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for='drinker'>Drinker</label>
+                <input type='text' id="drinker" ng-model="drink.drinker" ng-required="true" class='form-control'/>
+            </div>
+            <div class="form-group">
+                <input type="submit" ng-model="drink.drinker" ng-required="true" class="btn btn-default btn-lg" value="Give me coffee!!!"/>
+            </div>
+        </form>
+        <pre>{{drink | json }}</pre>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/coffee.js"></script>
+</body>
+</html>
