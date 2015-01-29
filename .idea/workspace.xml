@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc3ec19-4fed-435d-b463-7bc2cc115dd0" name="Default" comment="4:31 of video">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mechanitis/demo/coffee/resources/MongoClientManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/html/js/jquery-2.1.0.min.js" />
+    <list default="true" id="4dc3ec19-4fed-435d-b463-7bc2cc115dd0" name="Default" comment="4:31 of video" />
+    <list id="21d888e5-44d5-42bb-9e5d-bc2b01901e31" name="ignore" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mechanitis/demo/coffee/application/CoffeeShopApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/mechanitis/demo/coffee/application/CoffeeShopApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/groovy/com/mechanitis/demo/coffee/CoffeeShopResourceSpecification.groovy" afterPath="$PROJECT_DIR$/src/main/test/groovy/com/mechanitis/demo/coffee/CoffeeShopResourceSpecification.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mechanitis/demo/coffee/api/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/mechanitis/demo/coffee/api/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cafelito.iml" afterPath="$PROJECT_DIR$/cafelito.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/html/coffee.html" afterPath="$PROJECT_DIR$/src/main/resources/html/coffee.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/html/js/coffee.js" afterPath="$PROJECT_DIR$/src/main/resources/html/js/coffee.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/libraries/" />
     <ignored path="build/resources/main/html/js/angular.min.js" />
@@ -1285,13 +1275,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4dc3ec19-4fed-435d-b463-7bc2cc115dd0" name="Default" comment="" />
+      <changelist id="21d888e5-44d5-42bb-9e5d-bc2b01901e31" name="ignore" comment="" />
       <created>1422312792734</created>
       <option name="number" value="Default" />
       <updated>1422312792734</updated>
       <workItem from="1422312796564" duration="22389000" />
       <workItem from="1422565595770" duration="53000" />
       <workItem from="1422565705609" duration="1584000" />
-      <workItem from="1422568253673" duration="4129000" />
+      <workItem from="1422568253673" duration="4222000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1422519913436</created>
@@ -1305,15 +1296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1422520132758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4:31 of video">
+      <created>1422574475480</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1422574475480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28155000" />
+    <option name="totallyTimeSpent" value="28248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1330,7 +1327,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19583932" sideWeight="0.509839" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.49910554" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22381635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22381635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26350462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
