@@ -1,5 +1,7 @@
-package com.mechanitis.demo.coffee
+package groovy.com.mechanitis.demo.coffee
 
+import com.mechanitis.demo.coffee.api.DrinkType
+import com.mechanitis.demo.coffee.api.Order
 import com.mechanitis.demo.coffee.resources.CoffeeShopResource
 import com.mongodb.MongoClient
 import org.bson.types.ObjectId

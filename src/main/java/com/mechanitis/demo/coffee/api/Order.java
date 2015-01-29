@@ -2,8 +2,6 @@ package com.mechanitis.demo.coffee.api;
 
 import org.mongodb.morphia.annotations.Id;
 
-import java.util.Arrays;
-
 /**
  * Created by Alison on 28/01/15
  */
@@ -18,11 +16,21 @@ public class Order {
     //        "drinker": "Trisha"
     //    }
     private String[] selectedOptions;
+
     private DrinkType type;
     private String size;
     private String drinker;
+    private String coffeeShopId;
     @Id
     private String id;
+
+    public String getDrinker() {
+        return drinker;
+    }
+
+    public String getCoffeeShopId() {
+        return coffeeShopId;
+    }
 
     public String[] getSelectedOptions() {
         return selectedOptions;
@@ -34,10 +42,6 @@ public class Order {
 
     public String getSize() {
         return size;
-    }
-
-    public String getDrinker() {
-        return drinker;
     }
 
     public String getId() {

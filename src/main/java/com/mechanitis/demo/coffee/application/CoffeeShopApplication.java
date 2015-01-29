@@ -1,6 +1,7 @@
 package com.mechanitis.demo.coffee.application;
 
 import com.mechanitis.demo.coffee.resources.CoffeeShopResource;
+import com.mechanitis.demo.coffee.resources.MongoClientManager;
 import com.mongodb.MongoClient;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
@@ -27,6 +28,8 @@ public class CoffeeShopApplication extends Application<Configuration> {
         // Bug in 0.7.0 http://stackoverflow.com/questions/24822939/dropwizard-serving-assets-help-needed
         // need to set path to / in config
         environment.jersey().setUrlPattern("/api/*");
-        environment.jersey().register(new CoffeeShopResource(new MongoClient()));
+        MongoClient mongoClient = new MongoClient();
+        environment.lifecycle().manage(new MongoClientManager(mongoClient));
+        environment.jersey().register(new CoffeeShopResource(mongoClient));
     }
 }
