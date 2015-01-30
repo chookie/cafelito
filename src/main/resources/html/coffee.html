@@ -7,6 +7,16 @@
 </head>
 <body>
 
+    <div ng-controller="CoffeeShopController" class="container">
+        <div class="panel panel-default" ng-show="nearestCoffeeShop">
+            <!--@ is google maps parameter-->
+            <div class="panel-body">
+                Your coffee will be ready for pickup at: <strong>{{nearestCoffeeShop.name}}</strong>
+                <a ng-href="https://www.google.com/maps/place/{{nearestCoffeeShop.name}}/@{{nearestCoffeeShop.location.coordinates[1]}},{{nearestCoffeeShop.location.coordinates[0]}},16z">Map</a>
+            </div>
+        </div>
+    </div>
+
     <div ng-controller="OrderController" class="container">
         <alert ng-repeat="message in messages" type="message.type" close="closeAlert($index)">
             {{message.msg}}

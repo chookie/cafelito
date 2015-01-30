@@ -1,7 +1,6 @@
 package com.mechanitis.demo.coffee.resources;
 
-import com.codahale.metrics.annotation.Timed;
-import com.google.common.base.Optional;
+import com.mechanitis.demo.coffee.api.CoffeeShop;
 import com.mechanitis.demo.coffee.api.Order;
 import com.mongodb.MongoClient;
 import org.mongodb.morphia.Datastore;
@@ -16,10 +15,21 @@ import java.net.URI;
 @Produces(MediaType.APPLICATION_JSON)
 public class CoffeeShopResource {
 
-    private Datastore datastore;
+    private final Datastore datastore;
 
     public CoffeeShopResource(MongoClient mongoClient) {
         datastore = new Morphia().createDatastore(mongoClient, "Cafelito");
+    }
+
+    @Path("nearest/{latitude}/{longitude}")
+    @GET()
+    public Object getNearest(@PathParam("latitude") double latitude,
+                             @PathParam("longitude") double longitude) {
+
+        return datastore.find(CoffeeShop.class)
+                        .field("location")
+                        .near(longitude, latitude, true)
+                        .get(); // Just get closest one
     }
 
     @Path("order")

@@ -14,6 +14,7 @@ xmlSlurper.node.each { child ->
     child.tag.each { theNode ->
         def fieldName = theNode.@k.text()
         if (isValidFieldName(fieldName)) {
+            //noinspection GroovyAssignabilityCheck
             coffeeShop.put(fieldName, theNode.@v.text())
         }
     }

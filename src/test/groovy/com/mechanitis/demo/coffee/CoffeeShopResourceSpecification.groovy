@@ -1,9 +1,10 @@
-package groovy.com.mechanitis.demo.coffee
+package com.mechanitis.demo.coffee
 
 import com.mechanitis.demo.coffee.api.DrinkType
 import com.mechanitis.demo.coffee.api.Order
 import com.mechanitis.demo.coffee.resources.CoffeeShopResource
 import com.mongodb.MongoClient
+import groovy.json.JsonOutput
 import org.bson.types.ObjectId
 import spock.lang.Ignore
 import spock.lang.Specification
@@ -12,7 +13,6 @@ import javax.ws.rs.WebApplicationException
 import javax.ws.rs.core.Response
 
 class CoffeeShopResourceSpecification extends Specification {
-    @Ignore('Not implemented yet')
     def 'should return closest coffee shop to Portland Conference Center'() {
         given:
         def mongoClient = new MongoClient()
@@ -25,9 +25,10 @@ class CoffeeShopResourceSpecification extends Specification {
 
         then:
         nearestShop.name == 'Tiny\'s Coffee'
-        println nearestShop
+        println JsonOutput.toJson(nearestShop)
     }
 
+    @SuppressWarnings("GroovyUnusedAssignment")
     @Ignore('Not implemented yet')
     def 'should return 404 if no coffee shop found'() {
         given:
@@ -45,6 +46,7 @@ class CoffeeShopResourceSpecification extends Specification {
     }
 
     //functional test
+    @SuppressWarnings("GroovyAccessibility")
     def 'should save all fields to the database when order is saved'() {
         given:
         def mongoClient = new MongoClient()
@@ -70,6 +72,7 @@ class CoffeeShopResourceSpecification extends Specification {
         }
 
         when:
+        //noinspection GroovyUnusedAssignment
         Response response = coffeeShop.saveOrder(order);
 
         then:
@@ -89,6 +92,7 @@ class CoffeeShopResourceSpecification extends Specification {
     }
 
     //functional test
+    @SuppressWarnings(["GroovyAssignabilityCheck", "GroovyAccessibility"])
     @Ignore('Not implemented yet')
     def 'should return me an existing order'() {
         given:
@@ -123,6 +127,7 @@ class CoffeeShopResourceSpecification extends Specification {
     }
 
     //functional test
+    @SuppressWarnings("GroovyAssignabilityCheck")
     @Ignore('Not implemented yet')
     def 'should throw a 404 if the order is not found'() {
         given:
